@@ -287,5 +287,6 @@ def generalSearch(initialState, goalState, algorithmChoice, timeLimit, verbose="
   executionTime = (perf_counter() - searchStartTime) * 1000
   print(f"\n Execution Time: {executionTime:.2f} ms")
   
-initialState, goalState, algorithmChoice, timeLimitDecision, timeLimit  = getInput()
-generalSearch(initialState, goalState, algorithmChoice, timeLimit)
+def main():
+  initialState, goalState, algorithmChoice, timeLimitDecision, timeLimit  = getInput()
+  generalSearch(initialState, goalState, algorithmChoice, timeLimit)
